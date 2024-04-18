@@ -1,7 +1,8 @@
-CREATE TABLE products (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    description TEXT,
-    price DECIMAL(10, 2),
-    image_url VARCHAR(255)
-);
+CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    brand TEXT,
+    price REAL,
+    product_url TEXT,
+    image_url TEXT
+)
