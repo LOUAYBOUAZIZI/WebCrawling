@@ -16,7 +16,7 @@ with open('product_data.json', 'r') as file:
 
 for product in product_data:
     insert = '''
-    INSERT INTO products (name, brand, price, product_url, image_url)
+    INSERT INTO products (Name, Brand, Price, Product_url, Image_url)
     VALUES (%s, %s, %s, %s, %s)
     '''
     cursor.execute(insert, (
